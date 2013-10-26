@@ -1,0 +1,34 @@
+10
+
+dir
+1
+svn://192.168.0.100/SVN3/2013_jsf_directel_sitioweb/src
+svn://192.168.0.100/SVN3/2013_jsf_directel_sitioweb
+
+
+
+2013-09-10T21:13:37.156103Z
+1
+aliciaaa
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+804ec83c-1100-4788-9918-bb39952d6b9b
+
+conf
+dir
+
+java
+dir
+

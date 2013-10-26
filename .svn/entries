@@ -1,0 +1,74 @@
+10
+
+dir
+1
+svn://192.168.0.100/SVN3/2013_jsf_directel_sitioweb
+svn://192.168.0.100/SVN3/2013_jsf_directel_sitioweb
+
+
+
+2013-09-10T21:13:37.156103Z
+1
+aliciaaa
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+804ec83c-1100-4788-9918-bb39952d6b9b
+
+build.xml
+file
+
+
+
+
+2013-09-10T21:18:05.000000Z
+d4f63fbda66b7c7536aa5bfe6b106109
+2013-09-10T21:13:37.156103Z
+1
+aliciaaa
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3442
+
+dist
+dir
+
+nbproject
+dir
+
+src
+dir
+
+web
+dir
+

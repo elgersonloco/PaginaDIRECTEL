@@ -1,0 +1,35 @@
+# ==============================================================================
+#    lang_pt : Recursos de Nombres para el Proyecto
+#
+#     Idioma :Portugu\u00e9s
+# 
+#     Nota : Configuraci\u00f3n en WEB-INF/faces-config.xml
+# ==============================================================================
+
+
+#template.xhtml
+#-------------------------------------------------------------------------------
+defaultTitle = Quad-Tree S.A. de C.V.
+
+#Menu
+menuItem_1 = Inicioao
+menuItem_2 = Empresao
+menuItem_3 = Misi\u00f3nao y Visi\u00f3nao
+menuItem_4 = Proyectosao
+menuItem_5 = Transparenciao
+menuItem_6 = Contactao
+
+contact_us     = Contactanosao
+privacy_policy = Avisao do Privacidadao
+#-------------------------------------------------------------------------------
+
+#index.xhtml
+#-------------------------------------------------------------------------------
+#Slider
+sliderText_1 = Solucionesao de Desarrolloao a tus necesidades
+sliderText_2 = Sistemaao de Gesti\u00f3nao Municipal
+sliderText_3 = Haz de tu Facturaci\u00f3nao Electr\u00f3nicao algo sencillo
+sliderText_4 = Todos tus Tr\u00e1mitesao en un solo Lugar
+sliderText_5 = Planificao y haz m\u00e1s eficientes tus reuniones de Trabajoao
+sliderText_6 = \u00bfNecesitasao ir con un Notarioao?
+#-------------------------------------------------------------------------------

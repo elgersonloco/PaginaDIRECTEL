@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="#{localeBean.language}"
+    xmlns   ="http://www.w3.org/1999/xhtml"
+    xmlns:f ="http://java.sun.com/jsf/core"
+    xmlns:h ="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+    
+    <!--=================================================================================================================                                          
+       
+         INFORMATION
+         =============================
+                          PAGE : template.xhtml
+                      LANGUAGE : Es
+          PROGRAMMING LANGUAGE : JSF,HTML5,JavaScript             
+             	  STYLE SHEETS : css/style.css , css/normalize.css  , css/template.css                 
+              JAVASCRIPT FILES : 
+                      SEE ALSO : 
+                                 
+         DESCRIPTION
+         ==============================
+             Template para las Páginas del Portal
+                                                                                                    
+                 
+         PROGRAMMING RECORD
+         =============================
+
+          DATE             MODIFIED BY                           DESCRIPTION 
+         =============    ===================================   =====================================================              
+         Sep 10th 2013     Alicia Avila Alonso                   Creación teamplate.xhtml
+              
+===================================================================================================================== -->
+    <f:view locale="#{localeBean.locale}">
+        <h:head>
+            <!-- ================ TITLE ====================== -->
+            <title>
+                <ui:insert name="titulo">Directel</ui:insert>
+            </title>
+
+            <!-- ================ METATAGS =================== -->
+            <meta charset="UTF-8"/>   
+            <meta name="description" content="Página de Directel, Directel Web Page" /> 
+            <meta name="author"      content="Proyectos Voronoi S.C." />            
+            <meta name="keywords"    content="Directel, Catalogos, San Luis Potosí,México" />                    
+            <meta name="revised"     content="Alicia, 10/09/2013" />                   
+            <meta name="copyright"   content="Proyectos Voronoi S.C."/> 
+            <meta name="robots"      content="noindex,nofollow" />  
+
+
+            <meta name="application-name"    content="DIRECTEL"/>                            
+            <meta http-equiv="Cache-Control" content="no-cache"/>                
+            <meta http-equiv="Pragma"  content="no-cache"/>           
+            <meta http-equiv="Expires" content="-1" />               
+
+            <!-- ================ FAVICON ==================== -->
+            <link rel="icon" type="image/x-icon" href="#{request.contextPath}/favicon.ico"/>    
+            <link rel="icon" type="image/png"    href="#{request.contextPath}/favicon.png"/>           <!-- Web Browser:Size(16x16,32x32,64x64)-->
+            <link rel="apple-touch-icon"         href="#{request.contextPath}/apple-touch-57.png"/>    <!-- Apple:      Size(57x57)    iPhone4(HD):  Size(114x114)-->
+            <link rel="apple-touch-icon"         href="#{request.contextPath}/apple-touch-72.png"/>    <!-- iPad,iPad2: Size(72x72)    iPad3(HD):    Size(144x144)-->
+
+            <!-- ================ STYLES ===================== -->
+            <link rel="stylesheet" type="text/css" href="#{request.contextPath}/css/normalize.css" />  <!-- normalize.css file: This file must be the first 'css' declared  (Normalize default styles)-->
+            <link rel="stylesheet" type="text/css" href="#{request.contextPath}/css/style.css" />      <!-- style.css file    : This file must be the second 'css' declared (Shared CSS).-->
+            <link rel="stylesheet" type="text/css" href="#{request.contextPath}/css/template.css" />
+
+             <!-- Estilos personalizados por página-->
+            <ui:insert name="script">
+            </ui:insert>
+             
+            <!-- Estilos personalizados por página-->
+            <ui:insert name="custom_styles">
+            </ui:insert>
+        </h:head>
+
+         <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+         <!-- /////////////////////////////////////////  BODY  /////////////////////////////////////// -->
+         <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+        <h:body>
+            <div id="bodyCont">
+                <!-- Header -->
+                <div class="header">
+                     <div class="headerInt">
+                        <h:link value=" " outcome="/index.xhtml"><img src="#{request.contextPath}/css/img/logo.png"/></h:link>
+                        <div>
+                            <select id = "citySelect">
+                              <option selected="selected">San Luís Potosí</option>
+                              <option>Matehuala</option>
+                              <option>Rioverde</option>
+                           </select>
+                          <input type="search" class="citysearch" placeholder="¿Qué estás buscando?"  />
+                        </div>
+                     </div> <!--headerInt-->
+                </div> <!--header-->
+
+<!--                 Contenido de Pagina-->
+                <div class="contenedor">
+                    <div class="contIzq">
+                        <ui:insert name="contIzq"></ui:insert>
+                    </div>
+                    <div class="contDer">
+                        <ui:insert name="contDer"></ui:insert>
+                    </div>
+                    <ui:insert name="contAbajo">
+<!--                        <div class="contAbajo"></div>-->
+                    </ui:insert>
+                </div><!--contenedor-->
+                
+
+            </div> <!-- bodyCont -->
+            <!--                 Footer -->
+                <div class="footer">
+                    <div><h1>direcTel® Todos los derechos reservados // San Luis Potosí, México 2013</h1></div>
+                </div><!--footer-->
+        </h:body>
+    </f:view>
+</html>
